@@ -775,6 +775,7 @@ margin-top: 2rem;
     color: #FFD100;
     font-weight: 900;
 }
+@media only screen and (min-width: 767px){
 .container.nav-inner img{
      position: absolute;
     height: 100%;
@@ -782,6 +783,9 @@ margin-top: 2rem;
     left: 125px;
     top: 5px;
 }
+
+}
+
 .plans-grid{
     display: flex !important;
     overflow: scroll;
@@ -843,10 +847,14 @@ margin-top: 2rem;
     height: 23rem  !important;
 }
    #navbar .container.nav-inner{
-
+   width: 98%;
+   margin: auto;
     display: flex;
  
 
+   }
+   .container.nav-inner{
+    padding: 0 !important;
    }
    .hero-title{
             font-size: clamp(57px, 12vw, 80px) !important;
@@ -866,17 +874,57 @@ div#mobile-menu{
     font-size: 8px !important;
     letter-spacing: 1px !important;
    }
-   .container.nav-inner img{
-    left: 2rem;
-    position: absolute;
-height: 92%;
-        width: 19%;
 
-
-
+   #navbar{
+    padding: 5px 0;;
    }
+.nav-logo{
+  flex: 0 0 20%;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.nav-logo{
+      /* width: -1%;
+      margin: auto; */
+
+}
+.logo-fat{
+  color: white !important;
+}
 
 
+/* FAT */
+.logo-fat,
+.logo-fit {
+  color: #ffffff !important;
+}
+
+/* 2 (highlight element) */
+.logo-2 {
+  color: #ffcc00;
+  margin: 0 2px;
+}
+
+/* FIT with gradient */
+
+.nav-logo {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffcc00;
+  text-shadow: 
+    0 0 5px rgba(255, 204, 0, 0.5),
+    0 0 10px rgba(255, 204, 0, 0.3);
+  letter-spacing: 2px;
+}
 
 }
 .threed-scrollhint{
@@ -887,8 +935,51 @@ height: 92%;
     text-align: center !important;
 }
 
-@media only screen and(min-width: 768px){
+@media only screen and (min-width: 768px){
    .plan-card{
          flex: 0 0 25%;
     }
+   a.nav-logo span{
+     display: none;
+    }
+    .tab-switcher{
+  justify-content: center;
+}
+
+}
+
+
+.tab-switcher {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 14px 20px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tab-btn.active {
+  background: #f2c614;
+  color: #000;
+  border-color: #f2c614;
+}
+
+/* CRITICAL — hide both grids by default */
+#tab1,
+#tab2 {
+  display: none !important;
+}
+
+/* Show only the active one */
+#tab1.active,
+#tab2.active {
+  display: grid !important;
 }
