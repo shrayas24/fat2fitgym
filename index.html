@@ -9,7 +9,7 @@
 <meta property="og:description" content="Transform Your Body. Transform Your Life.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="indexx.css" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <style>
 
@@ -20,10 +20,14 @@
 <!-- ==================== NAVBAR ==================== -->
 <nav id="navbar">
   <div class="container nav-inner">
-    <!-- <img src="https://cdn.shopify.com/s/files/1/0639/3515/2267/files/IMG_1102.JPG_1.jpg?v=1773733908" alt="logo"/> -->
-    <a href="#hero" class="nav-logo">
+       <a href="#hero" class="nav-logo">
        <img src="https://cdn.shopify.com/s/files/1/0639/3515/2267/files/IMG_1102.JPG__1_-removebg-preview.png?v=1773738151" alt="logo"/>
-
+   
+      </a>
+    <!-- <img src="https://cdn.shopify.com/s/files/1/0639/3515/2267/files/IMG_1102.JPG_1.jpg?v=1773733908" alt="logo"/> -->
+  <a href="#hero" class="nav-logo">
+  <span class="logo-fat">FAT</span><span class="logo-2">2</span><span class="logo-fit">FIT</span>
+</a>
 
 
     <ul class="nav-links">
@@ -468,39 +472,52 @@
       <h2 class="section-title">Invest In<br><span>Your Health</span></h2>
       <p class="section-sub">Flexible plans for every commitment level. No hidden fees, no contracts. Just results.</p>
     </div>
-    <div class="plans-grid">
+
+<!-- Tab buttons — place above #tab1 grid -->
+<div class="tab-switcher">
+  <button class="tab-btn active" onclick="switchTab('tab1', this)">Weight Training </button>
+  <button class="tab-btn" onclick="switchTab('tab2', this)"> Weight Training + Cardio</button>
+</div>
+    <!--------- Tab name Weight Training + Cardio Plans Tab1--------->
+  <div class="plans-grid active" id="tab1">
+
+
+
       <div class="plan-card fade-up stagger-1">
         <div class="plan-duration">Monthly</div>
         <div class="plan-price"><sup>₹</sup>999</div>
         <div class="plan-period">per month</div>
         <ul class="plan-features">
+            <li>Joining Fee - ₹500</li>
           <li>Full Gym Access</li>
           <li>Locker Room</li>
           <li>Basic Fitness Assessment</li>
           <li>Group Classes</li>
         </ul>
         <!-- onclick="openPopup('Monthly Membership','₹999')" -->
-        <button class="plan-btn" ><a  href="https://wa.me/917760005821?text=Hi%20Fat2Fit%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership." target="_blank" > Join Now </a> </button>
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%20want%20to%20start%20my%20transformation%20with%20the%20Monthly%20weight%20training%20plan%20%28%E2%82%B9999%29.%20Please%20guide%20me." target="_blank">Join Now</a> </button>
       </div>
       <div class="plan-card fade-up stagger-2">
         <div class="plan-duration">Quarterly</div>
-        <div class="plan-price"><sup>₹</sup>2999</div>
+        <div class="plan-price"><sup>₹</sup>2599</div>
         <div class="plan-period">per 3 months</div>
         <ul class="plan-features">
+            <li>Joining Fee - ₹500</li>
           <li>Full Gym Access</li>
           <li>Locker Room</li>
           <li>Fitness Assessment</li>
           <li>Group Classes</li>
           <li>Diet Consultation (1x)</li>
         </ul>
-        <button class="plan-btn"><a  href="https://wa.me/917760005821?text=Hi%20Fat2Fit%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership." target="_blank" > Join Now </a></button>
+        <button class="plan-btn"><a href="https://wa.me/917760005821?text=Hey%21%20I%E2%80%99m%20interested%20in%20the%20Quarterly%20weight%20training%20transformation%20plan%20%28%E2%82%B92599%29.%20What%E2%80%99s%20the%20next%20step%3F" target="_blank">Join Now</a></button>
       </div>
       <div class="plan-card popular fade-up stagger-3">
         <span class="popular-badge">Most Popular</span>
         <div class="plan-duration">Half Yearly</div>
-        <div class="plan-price"><sup>₹</sup>4999</div>
+        <div class="plan-price"><sup>₹</sup>4199</div>
         <div class="plan-period">per 6 months</div>
         <ul class="plan-features">
+            <li>No Joining Fee</li>
           <li>Full Gym Access</li>
           <li>Locker Room</li>
           <li>Fitness Assessment</li>
@@ -508,13 +525,14 @@
           <li>Diet Consultations (3x)</li>
           <li>Progress Tracking</li>
         </ul>
-        <button class="plan-btn" ><a  href="https://wa.me/917760005821?text=Hi%20Fat2Fit%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership." target="_blank" > Join Now </a></button>
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%20want%20to%20join%20the%20Half%20Yearly%20weight%20training%20transformation%20plan%20%28%E2%82%B94199%29.%20Please%20share%20details." target="_blank">Join Now</a></button>
       </div>
       <div class="plan-card fade-up stagger-4">
         <div class="plan-duration">Yearly</div>
-        <div class="plan-price"><sup>₹</sup>7999</div>
+        <div class="plan-price"><sup>₹</sup>6999</div>
         <div class="plan-period">per year</div>
         <ul class="plan-features">
+             <li>No Joining Fee</li>
           <li>Full Gym Access</li>
           <li>Locker Room</li>
           <li>Full Body Assessment</li>
@@ -523,8 +541,92 @@
           <li>Transformation Tracking</li>
           <li>Priority Trainer Access</li>
         </ul>
-        <button class="plan-btn" ><a  href="https://wa.me/917760005821?text=Hi%20Fat2Fit%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20membership." target="_blank" > Join Now </a></button>
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%E2%80%99m%20ready%20to%20commit%20to%20the%20Yearly%20weight%20training%20transformation%20plan%20%28%E2%82%B96999%29.%20Please%20help%20me%20get%20started." target="_blank">Join Now</a></button>
       </div>
+
+
+
+
+
+    
+
+
+
+    </div>
+
+
+
+<!-------Tab 2 content   -->
+
+    <!--------- Tab name Weight Training -------->
+
+ <div class="plans-grid" id="tab2">
+
+
+  <div class="plan-card fade-up stagger-1">
+        <div class="plan-duration">Monthly</div>
+        <div class="plan-price"><sup>₹</sup>1199</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+           <li>Joining Fee - ₹500</li>
+          <li>Full Gym Access</li>
+          <li>Locker Room</li>
+          <li>Basic Fitness Assessment</li>
+          <li>Group Classes</li>
+        </ul>
+        <!-- onclick="openPopup('Monthly Membership','₹999')" -->
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%20want%20to%20start%20my%20transformation%20with%20the%20Monthly%20plan%20%28%E2%82%B91199%29.%20Please%20guide%20me%20with%20next%20steps." target="_blank">Join Now</a> </button>
+      </div>
+      <div class="plan-card fade-up stagger-2">
+        <div class="plan-duration">Quarterly</div>
+        <div class="plan-price"><sup>₹</sup>3199</div>
+        <div class="plan-period">per 3 months</div>
+        <ul class="plan-features">
+                    <li>Joining Fee - ₹500</li>
+          <li>Full Gym Access</li>
+          <li>Locker Room</li>
+          <li>Fitness Assessment</li>
+          <li>Group Classes</li>
+          <li>Diet Consultation (1x)</li>
+        </ul>
+        <button class="plan-btn"><a href="https://wa.me/917760005821?text=Hey%21%20I%20want%20to%20start%20my%20transformation%20with%20the%20Quarterly%20plan%20%28%E2%82%B93199%29.%20Please%20share%20the%20details%20and%20next%20steps." target="_blank">Join Now</a></button>
+      </div>
+      <div class="plan-card popular fade-up stagger-3">
+        <span class="popular-badge">Most Popular</span>
+        <div class="plan-duration">Half Yearly</div>
+        <div class="plan-price"><sup>₹</sup>5199</div>
+        <div class="plan-period">per 6 months</div>
+        <ul class="plan-features">
+               <li>No Joining Fee</li>
+          <li>Full Gym Access</li>
+          <li>Locker Room</li>
+          <li>Fitness Assessment</li>
+          <li>Group Classes</li>
+          <li>Diet Consultations (3x)</li>
+          <li>Progress Tracking</li>
+        </ul>
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%E2%80%99m%20interested%20in%20the%20Half%20Yearly%20transformation%20plan%20%28%E2%82%B95199%29.%20I%E2%80%99m%20serious%20about%20my%20fitness.%20What%E2%80%99s%20next%3F" target="_blank">Join Now</a></button>
+      </div>
+      <div class="plan-card fade-up stagger-4">
+        <div class="plan-duration">Yearly</div>
+        <div class="plan-price"><sup>₹</sup>7999</div>
+        <div class="plan-period">per year</div>
+        <ul class="plan-features">
+               <li>No Joining Fee</li>
+          <li>Full Gym Access</li>
+          <li>Locker Room</li>
+          <li>Full Body Assessment</li>
+          <li>Group Classes</li>
+          <li>Unlimited Diet Consults</li>
+          <li>Transformation Tracking</li>
+          <li>Priority Trainer Access</li>
+        </ul>
+        <button class="plan-btn" ><a href="https://wa.me/917760005821?text=Hey%21%20I%20want%20to%20commit%20to%20a%20full%20Yearly%20transformation%20plan%20%28%E2%82%B97999%29.%20Please%20guide%20me%20to%20get%20started." target="_blank">Join Now</a></button>
+      </div>
+  
+
+
+
     </div>
   </div>
 </section>
@@ -853,7 +955,7 @@
               <div class="result-card-value" id="res-gain">—<span>kcal</span></div>
             </div>
           </div>
-          <div style="margin-top:24px;padding:20px;background:var(--red-glow);border:1px solid rgba(255,209,0,0.2);border-radius:2px">
+          <div style="margin-top:24px;margin-bottom:24px;padding:20px;background:var(--red-glow);border:1px solid rgba(255,209,0,0.2);border-radius:2px">
             <p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:8px">BMI &amp; Protein Target</p>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
               <div>
@@ -868,7 +970,9 @@
               </div>
             </div>
           </div>
-          <button class="red-btn" style="margin-top:24px;width:100%;justify-content:center;color:#0B0B0B" onclick="openPopup('Yearly Membership','₹7999')">Start My Transformation →</button>
+                  <a  style="margin-top:24px;width:100%;justify-content:center;color:#0B0B0B" href="https://wa.me/917760005821?text=Hey%21%20I%20just%20clicked%20on%20Start%20My%20Transformation%20%F0%9F%92%AA%0A%0AI%E2%80%99m%20serious%20about%20improving%20my%20fitness%20and%20ready%20to%20follow%20a%20proper%20plan.%0A%0ACan%20you%20share%20the%20next%20steps%20and%20available%20programs%3F" target="_blank" class="calc-btn">Start My Transformation → </a>
+
+          <!-- <button class="red-btn" style="margin-top:24px;width:100%;justify-content:center;color:#0B0B0B" onclick="openPopup('Yearly Membership','₹7999')">Start My Transformation →</button> -->
         </div>
       </div>
     </div>
@@ -979,6 +1083,7 @@
           <div class="timing-closed-dot"></div>
           <p class="timing-closed-text"><span class="timing-closed-day">Sunday</span> — Gym is closed. Rest. Recover. Come back stronger.</p>
         </div>
+        
         <a href="https://share.google/O7Tp7n17BpqkoYDy4" target="_blank" class="red-btn">Get Directions ↗</a>
       </div>
       <div class="fade-right">
@@ -1088,7 +1193,7 @@
           <li><a href="#visit">5:00 AM – 10:30 AM</a></li>
           <li><a href="#visit">Mon–Sat Evening</a></li>
           <li><a href="#visit">5:00 PM – 10:00 PM</a></li>
-          <li style="color:var(--red);font-size:13px;padding-top:4px">Sunday: Closed</li>
+          <li style="color:var(--red);font-size:13px;padding-top:4px">Sunday Morning <br> 7:00 AM - 10:00 AM</li>
         </ul>
       </div>
     </div>
@@ -1536,6 +1641,6 @@ window.addEventListener('scroll', ()=>{
 console.log('%c FAT2FIT GYM 💪', 'color:#FFD100;font-size:24px;font-weight:bold;font-family:Bebas Neue');
 console.log('%c Transform Your Body. Transform Your Life.', 'color:#888;font-size:14px');
 </script>
-  <script src="index.js"></script>
+  <script src="indexx.js"></script>
 </body>
 </html>
