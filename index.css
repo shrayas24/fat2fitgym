@@ -68,6 +68,12 @@ body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xm
 .mobile-menu a{font-family:var(--font-d);font-size:42px;letter-spacing:3px;color:var(--white);transition:color 0.3s}
 .mobile-menu a:hover{color:var(--red)}
 
+/* ======================== PROMO BANNER ======================== */
+.promo-banner{width:100%;margin-top:96px}
+.promo-banner picture,
+.promo-banner img{display:block;width:100%}
+.promo-banner img{height:auto;object-fit:cover}
+
 /* ======================== HERO ======================= */
 #hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #hero-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
@@ -92,7 +98,7 @@ body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xm
 @keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 
 /* ======================== 3D SECTION ======================== */
-#threed{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0B0B0B}
+#threed{position:relative;height:50vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0B0B0B}
 #threed-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0.85}
 .threed-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,var(--black) 80%);pointer-events:none}
 .threed-text{position:absolute;right:10%;top:50%;transform:translateY(-50%);text-align:right;z-index:2}
@@ -824,6 +830,10 @@ margin-top: 2rem;
 #navbar{
     background-color: black;
 }
+body .promo-banner + #hero{
+    margin-top: 0;
+    display: none;
+}
    #hero{
     margin-top: 2rem;
    }
@@ -863,11 +873,14 @@ div#mobile-menu{
  gap: 0;
 
    }
-    #navbar {
+        #navbar {
         position: sticky !important;
     }
-   #hero{
-    margin-top: 2rem;
+   .promo-banner{
+    margin-top: 0;
+   }
+   body .promo-banner + #hero{
+    margin-top: 0 !important;
    }
   
    .hero-badge-text{
